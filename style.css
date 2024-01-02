@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    max-height: max-content;
+    background-color: aqua;
+    background-image: url('./images/rainy-day.webp');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    z-index: -1;
+}
+
+.first {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 100%;
+    width: 100%;
+    height: 18vh;
+    color: white;
+    position: relative;
+    background: linear-gradient(to bottom, rgb(37, 37, 108), black);
+}
+
+@media(max-width:500px) {
+    .first {
+        height: 14vh;
+    }
+}
+
+.hover1 {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.come1 {
+    position: relative;
+    top: -100px;
+    transition: 1s;
+    margin-left: 8px;
+}
+
+.second {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.a {
+    background: linear-gradient(to bottom, black, rgb(128, 114, 255));
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 49% 49% 2%;
+    grid-template-rows: 90% 10%;
+    color: white;
+    place-items: center;
+}
+
+.s1 {
+    width: 700px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 20%;
+    background: linear-gradient(to top, blue, white);
+    display: grid;
+    place-items: center;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+}
+
+.griding {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40% 30% 30%;
+    place-items: center;
+    position: relative;
+}
+
+.inputing {
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(t top, blue, white);
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    place-items: center;
+}
+
+.buttonstyle {
+    border: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    right: 30px;
+    background: linear-gradient(to top, blue, black);
+    cursor: pointer;
+}
+
+#mainid {
+    border: none;
+    width: 90%;
+    height: 50%;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    left: 20px;
+    color: white;
+}
+
+@media(max-width:500px) {
+    .snow {
+        width: 150px;
+        height: 150px;
+    }
+
+    .drizzle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .wind {
+        width: 60px;
+        height: 60px;
+    }
+
+    .humidity {
+        width: 60px;
+        height: 60px;
+    }
+
+    .first {
+        height: 10vh;
+    }
+}
+
+.later {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+}
+
+.pointer {
+    position: absolute;
+    cursor: pointer;
+    background-color: white;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
